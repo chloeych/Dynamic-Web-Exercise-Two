@@ -1,7 +1,9 @@
 import React from 'react';
-// import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// Styles
 import './App.css';
 
+//Components
 import Header from './components/Header';
 import Home from "./containers/Home";
 
@@ -9,7 +11,13 @@ function App() {
   return (
     <div className="SiteWrapper">
       <Header/>
-      <Home/>
+      <Router>
+        <Switch>
+          <Route path="/">
+           <Home/> 
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

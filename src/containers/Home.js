@@ -80,7 +80,7 @@ import WeatherImage from "../components/WeatherImage";
         setCurrentLowTemperature(weatherData.main.temp_min);
        
 
-        let cloudinessValue = weatherData.clouds.all/200;
+        let cloudinessValue = weatherData.clouds.all/230;
         setCloudiness(cloudinessValue);
         setWeatherType(weatherData.weather[0].main);
 
@@ -92,12 +92,12 @@ import WeatherImage from "../components/WeatherImage";
   
 
     return (
-    <div className="Home" style = {{backgroundColor:`rgba(0,0,0,${cloudiness}`}}>
-    <h1> Weather in {city} </h1>
-
-      <div className="WeatherImage">
+    <div className="Home" style = {{backgroundColor:`rgba(48,100,189,${cloudiness}`}}>
+        <div className="WeatherImage">
         <WeatherImage weatherType={weatherType}/>
         </div>
+    <h1> Weather in {city} </h1>
+    
         
         <div className="WeatherInfo_Data">
 

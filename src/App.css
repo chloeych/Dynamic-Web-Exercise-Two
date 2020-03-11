@@ -7,7 +7,9 @@
 
 .Home{
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 1080px;
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .Home h1{
@@ -36,6 +38,7 @@
 .WeatherInfo_Image{
   flex-basis: 50%;
   font-size: 100px;
+  opacity: 0.2;
 }
 
 .WeatherInfo_Data{ 

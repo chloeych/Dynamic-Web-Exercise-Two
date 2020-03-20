@@ -80,7 +80,7 @@ import WeatherImage from "../components/WeatherImage";
         setCurrentLowTemperature(weatherData.main.temp_min);
        
 
-        let cloudinessValue = weatherData.clouds.all/230;
+        let cloudinessValue = weatherData.clouds.all/200;
         setCloudiness(cloudinessValue);
         setWeatherType(weatherData.weather[0].main);
 

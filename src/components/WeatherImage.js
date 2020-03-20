@@ -6,7 +6,7 @@ const Icon = ({weatherType}) => {
         switch (weatherType) {
             case 'Clouds': 
                 return <FontAwesomeIcon icon={faCloud}/>
-            case 'Rainy': 
+            case 'Rain': 
                 return <FontAwesomeIcon icon={faCloudRain}/>
             case 'Clear': 
                 return <FontAwesomeIcon icon={faSun}/>
